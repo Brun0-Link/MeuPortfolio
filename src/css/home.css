@@ -1,0 +1,60 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(31, 29, 33);
+  background: linear-gradient(230deg, var(--primary-color) 0%, var(--icon-color) 100%);
+  background-size: cover;
+  box-shadow: inset 0px -40px 40px #000;
+}
+
+.profile__foto {
+  filter: grayscale();
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.profile__text {
+  font-size: 1.5rem;
+}
+
+.profile__name {
+  font-size: 4rem;
+  color: var(--);
+}
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/BcgTech.gif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  box-shadow: inset 0px -40px 40px #000;
+}
+
+.profile__foto {
+  filter: grayscale();
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.profile__text {
+  font-size: 1.5rem;
+  ;
+}
+
+.profile__name {
+  font-size: 4rem;
+  color: var(--primary-color);
+}
