@@ -3,9 +3,14 @@ import { ContactsSection } from "./components/Sections/ContactsSection";
 import { Header } from "./components/Header";
 import { HomeSection } from "./components/Sections/HomeSection";
 
+import { useContext } from "react";
+import { ThemeContext } from "./context/ThemeContext";
+
 function App() {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <div className="App">
+    <div className={`App ${theme === "dark" ? "dark_theme" : "light_theme"}`}>
       <Header />
       <main>
         <HomeSection />
@@ -23,7 +28,7 @@ function App() {
         <ContactsSection />
       </main>
       <footer>Credits soon</footer>
-    </div>
+    </div >
   );
 }
 

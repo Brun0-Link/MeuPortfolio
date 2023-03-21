@@ -18,8 +18,6 @@
   font-weight: 400;
 
   color-scheme: dark;
-  background-color: var(--dark-bcg);
-  color: var(--text-white);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -46,11 +44,21 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: 'Ubuntu', sans-serif;
+  transition: background-color 0.4s ease-in-out;
 }
 
-body.dark_mode {
+body:has(.App.dark_theme) {
+  background-color: var(--dark-bcg);
+  color: var(--text-white);
+}
+
+body:has(.App.light_theme) {
   background-color: #f9f9f9;
   color: #213547;
+}
+body:has(.App.light_theme) main .profile {
+  color: var(--text-white);
+  text-shadow: 1px 2px #333;
 }
 
 #toggle{
@@ -169,6 +177,7 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
+  border-radius: 12px;
   background-image: url('./assets/BcgTech.gif');
   background-repeat: no-repeat;
   background-size: 100%;

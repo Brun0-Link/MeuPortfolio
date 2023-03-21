@@ -1,10 +1,8 @@
+import { useContext } from "react"
+import { ThemeContext } from "../context/ThemeContext"
+
 export function Header() {
-  const body = document.querySelector("body");
-  const toggle = document.getElementById("toggle");
-  function toggleDarkLightMode() {
-    toggle.classList.toggle("active");
-    body.classList.toggle("dark_mode");
-  }
+  const { theme, toggleTheme } = useContext(ThemeContext)
 
   return (
     <header>
@@ -32,9 +30,9 @@ export function Header() {
         </ul>
       </nav>
 
-      <div id="toggle" onClick={toggleDarkLightMode}>
+      <div id="toggle" onClick={toggleTheme}>
         <i className="indicator"></i>
       </div>
     </header>
-  );
+  )
 }
