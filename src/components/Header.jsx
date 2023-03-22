@@ -1,15 +1,22 @@
-import { useContext } from "react"
+import { useContext, useState, useEffect } from "react"
 import { ThemeContext } from "../context/ThemeContext"
 
 export function Header() {
   const { theme, toggleTheme } = useContext(ThemeContext)
+  const [sticky, setSticky] = useState(false)
+
+  const handleScroll = () => {
+    setSticky(window.scrollY > 0)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
 
   return (
-    <header>
+    <header className={`${sticky ? 'sticky' : ''}`}>
       <div className="logo">BrunoTrajano</div>
-      <a href="#">
-        <i className="fas fa-bars navigation-icon"></i>
-      </a>
       <nav>
         <ul className="menu">
           <li>
@@ -33,6 +40,6 @@ export function Header() {
       <div id="toggle" onClick={toggleTheme}>
         <i className="indicator"></i>
       </div>
-    </header>
+    </header >
   )
 }

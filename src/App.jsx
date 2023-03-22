@@ -5,6 +5,7 @@ import { HomeSection } from "./components/Sections/HomeSection";
 
 import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
+import { BackToTop } from "./components/BackToTop";
 
 function App() {
   const { theme } = useContext(ThemeContext)
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className={`App ${theme === "dark" ? "dark_theme" : "light_theme"}`}>
       <Header />
+      <BackToTop />
       <main>
         <HomeSection />
         <AboutSection />
