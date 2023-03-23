@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export function ContactsSection() {
   return (
     <section className="contatos" id="contato">
@@ -10,8 +12,7 @@ export function ContactsSection() {
         </li>
 
         <li className="social">
-          <a href="https://github.com/link.brun0" target="_blank">
-            {" "}
+          <a href="https://github.com/Brun0-Link" target="_blank">
             <i className="fab fa-github"></i>
           </a>
         </li>
