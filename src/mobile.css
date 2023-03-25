@@ -1,6 +1,6 @@
 @media (max-width: 640px) {
-    body {
-      width: 100%;
+    #root {
+      padding: 1rem;
     }
 
     header {

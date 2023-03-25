@@ -36,5 +36,5 @@ export function ContactsSection() {
         </li>
       </ul>
     </section>
-  );
+  )
 }

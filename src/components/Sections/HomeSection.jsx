@@ -10,5 +10,5 @@ export function HomeSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }
