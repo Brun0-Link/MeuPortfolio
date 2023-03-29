@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export function ContactsSection() {
   return (
     <section className="contatos" id="contato">
-      <h2 className="section__tittle">Contatos</h2>
+      <h2 className="section__title">Contatos</h2>
       <ul className="social-container">
         <li className="social">
           <a href="https://www.linkedin.com/in/bruno-trajano/" target="_blank">

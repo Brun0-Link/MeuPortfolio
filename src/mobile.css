@@ -19,6 +19,10 @@
         /* justify-content: center; */
         gap: 2em;
     }
+
+    section {
+      padding-top: 0;
+    }
   
     .home {
       position: relative;
@@ -32,45 +36,13 @@
       font-size: 2rem;
     }
   
-    .section__tittle {
+    .section__title {
       font-size: 4.5rem;
       line-height: 1.2em;
     }
   
-    .skills__tittle, .description__tittle {
-      font-size: 3.5rem;
+    .skills__title, .description__title {
       font-weight: 400;
     }
-  
-    /* .sobre-mim {
-      height: 2100px;
-      display: flex;
-      align-items: center;
-      gap: 124px;
-    } */
-  
-    /* .skills__container {
-      justify-content: center;
-    }
-  
-    .projetos {
-      height: 1800px;
-      display: flex;
-    }
-  
-    .card-container{
-      display: flex;
-      justify-content: center;
-  
-    }
-  
-    .card-container img {
-      width: 350px;
-    } */
-  
-    /*
-    .social-container {
-      flex-direction: column;
-    } */
   }
   

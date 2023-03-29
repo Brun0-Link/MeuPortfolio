@@ -1,9 +1,9 @@
+import { useContext } from "react";
+
 import { AboutSection } from "./components/Sections/AboutSection";
 import { ContactsSection } from "./components/Sections/ContactsSection";
 import { Header } from "./components/Header";
 import { HomeSection } from "./components/Sections/HomeSection";
-
-import { useContext } from "react";
 
 import { ThemeContext } from "./context/ThemeContext";
 import { BackToTop } from "./components/BackToTop";
