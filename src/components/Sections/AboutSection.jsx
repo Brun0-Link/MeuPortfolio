@@ -1,3 +1,5 @@
+
+
 export function AboutSection() {
   return (
     <section className="sobre-mim" id="sobre-mim">
@@ -14,67 +16,69 @@ export function AboutSection() {
 
       <div className="skills">
         <h3 className="skills__title">Skills:</h3>
-        <ul className="skills__container">
+        <div className="skills__container">
+          <ul className="skills__tracker">
 
-          <li className="skills__card">
-            <div className="tec_name">HTML</div>
-            <div className="tec_picture">
-              <i className="fab fa-html5"></i>
-            </div>
-            <div className="tec_description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum vitae quo praesentium libero ut sapiente, porro voluptate ducimus natus ipsam fugit aspernatur nemo quidem, amet ad harum eligendi temporibus!
-            </div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">HTML</div>
+              <div className="tec_picture">
+                <i className="fab fa-html5"></i>
+              </div>
+              <div className="tec_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium cum vitae quo praesentium libero ut sapiente, porro voluptate ducimus natus ipsam fugit aspernatur nemo quidem, amet ad harum eligendi temporibus!
+              </div>
+            </li>
 
-          <li className="skills__card">
-            <div className="tec_name">CSS</div>
-            <div className="tec_picture">
-              <i className="fab fa-css3-alt"></i>
-            </div>
-            <div className="tec_description"></div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">CSS</div>
+              <div className="tec_picture">
+                <i className="fab fa-css3-alt"></i>
+              </div>
+              <div className="tec_description"></div>
+            </li>
 
-          <li className="skills__card">
-            <div className="tec_name">JAVASCRIPT</div>
-            <div className="tec_picture">
-              <i className="fab fa-js"></i>
-            </div>
-            <div className="tec_description"></div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">JAVASCRIPT</div>
+              <div className="tec_picture">
+                <i className="fab fa-js"></i>
+              </div>
+              <div className="tec_description"></div>
+            </li>
 
-          <li className="skills__card">
-            <div className="tec_name">GITHUB</div>
-            <div className="tec_picture">
-              <i className="fab fa-github"></i>
-            </div>
-            <div className="tec_description"></div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">GITHUB</div>
+              <div className="tec_picture">
+                <i className="fab fa-github"></i>
+              </div>
+              <div className="tec_description"></div>
+            </li>
 
-          <li className="skills__card">
-            <div className="tec_name">REACT.JS</div>
-            <div className="tec_picture">
-              <i className="fab fa-react"></i>
-            </div>
-            <div className="tec_description"></div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">REACT.JS</div>
+              <div className="tec_picture">
+                <i className="fab fa-react"></i>
+              </div>
+              <div className="tec_description"></div>
+            </li>
 
-          <li className="skills__card">
-            <div className="tec_name">NODE.JS</div>
-            <div className="tec_picture">
-              <i className="fab fa-node-js"></i>
-            </div>
-            <div className="tec_description"></div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">NODE.JS</div>
+              <div className="tec_picture">
+                <i className="fab fa-node-js"></i>
+              </div>
+              <div className="tec_description"></div>
+            </li>
 
-          <li className="skills__card">
-            <div className="tec_name">MONGODB</div>
-            <div className="tec_picture">
-              <i className="fa-brands fa-envira"></i>
-            </div>
-            <div className="tec_description"></div>
-          </li>
+            <li className="skills__card">
+              <div className="tec_name">MONGODB</div>
+              <div className="tec_picture">
+                <i className="fa-brands fa-envira"></i>
+              </div>
+              <div className="tec_description"></div>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </div>
     </section>
   )

@@ -106,6 +106,11 @@ body:has(.App.light_theme) .to-top {
 body:has(.App.light_theme) .projetos .card-container {
   box-shadow: 0px 0px 16px var(--dark-bcg);
 }
+body:has(.App.light_theme) .skills__container::before,
+body:has(.App.light_theme) .skills__container::after {
+  background: linear-gradient(to right, var(--text-white) 0%,
+  transparent 100%);
+}
 body:has(.App.light_theme) .skills__card {
   color: var(--text-white);
 }
@@ -259,6 +264,21 @@ section {
   box-shadow: inset 0 -40px 40px #000;
 }
 
+.profile h1, .profile span {
+  animation: has-shown 2s ease-in-out forwards;
+}
+
+@keyframes has-shown {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* about section */
 
 .sobre-mim {
@@ -267,17 +287,53 @@ section {
   gap: 2rem;
 }
 
-ul.skills__container {
+.skills__container {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding: 1rem;
-  height: 720px;
-  gap: 2rem;
-  overflow: scroll;
+  height: 360px;
+  width: 100%;
+  overflow: hidden;
 }
 
-ul.skills__container::-webkit-scrollbar {
+.skills__container::before, .skills__container::after {
+  content: '';
+  position: absolute;
+  width: 5%;
+  height: 100%;
+  background: linear-gradient(to right, var(--dark-bcg) 0%,
+  transparent 100%);
+  z-index: 2;
+}
+.skills__container::before {
+  left: 0;
+}
+.skills__container::after {
+  right: 0;
+  transform: rotateZ(180deg);
+}
+
+ul.skills__tracker {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  animation: anima-tracker 8s linear infinite alternate;
+}
+
+@keyframes anima-tracker {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+ul.skills__tracker::-webkit-scrollbar {
   display: none;
 }
 
@@ -357,8 +413,7 @@ ul.skills__container::-webkit-scrollbar {
   height: 100%;
   font-size: 2rem;
   font-weight: 700;
-  color: #213547;
-  text-shadow: 0px 0px 2px var(--text-white);
+  color: var(--text-white);
 }
 
 /* contacts section  */
